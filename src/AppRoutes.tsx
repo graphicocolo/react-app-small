@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import Home from '@/pages/Home';
 import About from '@/pages/About';
+import StudyMnt from "@/pages/StudyMnt";
+import Basicjsx from "@/pages/Basicjsx";
 
 // https://zenn.dev/tonkotsuboy_com/articles/typescript-as-const-satisfies
 const routes = [
@@ -16,6 +18,14 @@ const routes = [
   {
     path: '/about',
     Component: About
+  },
+  {
+    path: '/studymnt',
+    Component: StudyMnt
+  },
+  {
+    path: '/basicjsx',
+    Component: Basicjsx
   },
 ] as const satisfies RouteProps[];
 
