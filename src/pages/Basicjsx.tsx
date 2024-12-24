@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Navigation from '@/components/Navigation';
 
 const Basicjsx = () => {
   const logInStatus = 'login status...';
@@ -10,27 +10,23 @@ const Basicjsx = () => {
   const isLoggedIn = false;
   const isDone = true;
   return (
-    <div className="flex flex-col items-center mt-32">
-      <h1 className="text-3xl font-bold">React 学習のための小さなアプリ</h1>
-      <Link to='/'>Home</Link>
-      <Link to='/studymnt'>MENTA 課題</Link>
-      <Link to='/about'>About</Link>
-      <div className="flex flex-col mt-20">
-        <h2>{logInStatus}</h2>
+    <>
+      <Navigation />
+      <div className="flex flex-col p-5">
+        <h2 className="text-2xl font-bold">{logInStatus}</h2>
         {isLoggedIn ? (
           <p className="text-green-500">{loggedInGreeting}</p>
         ) : (
           <p className="text-red-500">{notLoggedInGreeting}</p>
         )}
-        <h2>{doneStatus}</h2>
+        <h2 className="text-2xl font-bold">{doneStatus}</h2>
         {isDone ? (
           <p className="text-green-500">{doneGreeting}</p>
         ) : (
           <p className="text-red-500">{notDoneGreeting}</p>
         )}
       </div>
-    </div>
-
+    </>
   )
 }
 

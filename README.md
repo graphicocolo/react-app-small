@@ -142,10 +142,6 @@ npm install react-router-dom
 
 /src/AppRoutes.tsx にルーティング設定を記述
 
-```
-
-```
-
 ## main.tsx
 
 エントリポイントとなるファイル
