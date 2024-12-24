@@ -64,11 +64,11 @@ export default defineConfig({
 npm run dev
 ```
 
-# バージョン管理
+## バージョン管理
 
-## リモートリポジトリ作成
+### リモートリポジトリ作成
 
-## ローカルリポジトリ設定
+### ローカルリポジトリ設定
 
 リモートリポジトリを作成した後に表示されるページ内の、
 
@@ -85,3 +85,69 @@ git branch -M main
 git remote add origin 指定のリモートリポジトリの場所
 git push -u origin main
 ```
+
+## Tailwind CSS
+
+### インストール
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p // tailwind.config.js と tailwind.config.jsを作成
+```
+
+### 設定
+
+```
+// tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content:[
+    "./src/***.jsx",
+    "./src/***.jsx",
+],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+```
+// ./src/index.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### スタイルを検索
+
+検索欄から検索
+
+[Install Tailwind CSS with Create React App](https://tailwindcss.com/docs/guides/create-react-app)
+
+## ルーティング
+
++ [Feature Overview](https://reactrouter.com/6.28.0/start/overview#feature-overview)
++ [React Routerのルーティング実装](https://zenn.dev/takaya39/articles/4669c3fd1c7f04)
+
+ライブラリを導入
+
+```
+npm install react-router-dom
+```
+
+/src/pages 直下に、ページファイルを格納
+
+/src/AppRoutes.tsx にルーティング設定を記述
+
+```
+
+```
+
+## main.tsx
+
+エントリポイントとなるファイル
+
+ここで App コンポーネントをインポートしており、トップページとして App.tsx の内容が表示される
