@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Navigation from '@/components/Navigation';
 import Greeting from '@/components/Greeting';
 import LoggedIn from '@/components/LoggedIn';
@@ -13,6 +15,12 @@ const Basicjsx = () => {
   const notDoneGreeting = 'not yet.';
   const isLoggedIn = false;
   const isDone = true;
+
+  const [inputValue, setInputValue] = useState<string>('');
+  const handleInputChange = (e:React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setInputValue(value);
+  };
   return (
     <>
       <Navigation />
@@ -37,6 +45,12 @@ const Basicjsx = () => {
         ) : (
           <p className="text-red-500">{notDoneGreeting}</p>
         )}
+      </div>
+      <div className="flex flex-col items-center mt-32">
+        <form>
+          <input type="text" value={inputValue} onChange={handleInputChange} className="border border-slate-300 rounded" />
+        </form>
+        <p>ここに入力欄のテキストが反映される<span className="pl-2 text-blue-600 font-bold">{inputValue}</span></p>
       </div>
     </>
   )
