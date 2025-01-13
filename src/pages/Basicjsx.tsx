@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Greeting from '@/components/Greeting';
 import LoggedIn from '@/components/LoggedIn';
 import LoggedOut from '@/components/LoggedOut';
+import IsLoggedInMessage from '@/components/IsLoggedInMessage';
 
 const Basicjsx = () => {
   const logInStatus = 'login status...';
@@ -22,6 +23,8 @@ const Basicjsx = () => {
       </div>
       <Greeting />
       <div className="flex flex-col p-5">
+        <h2 className="text-2xl font-bold">Componen Props Message</h2>
+        <IsLoggedInMessage isLoggedIn={isLoggedIn} />
         <h2 className="text-2xl font-bold">{logInStatus}</h2>
         {isLoggedIn ? (
           <LoggedIn />
