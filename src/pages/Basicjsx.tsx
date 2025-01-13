@@ -57,3 +57,25 @@ const Basicjsx = () => {
 }
 
 export default Basicjsx;
+
+// 答え
+// import { useState } from "react";
+// import "./App.css";
+
+// function App() {
+//   const [inputValue, setInputValue] = useState("");
+//   return (
+//     <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100">
+//       <h1 className="text-2xl font-bold mb-4">App</h1>
+//       <input
+//         type="text"
+//         value={inputValue}
+//         onChange={(e) => setInputValue(e.target.value)}
+//         className="border border-gray-300 p-2 mb-4"
+//       />
+//       <p className="text-lg">{inputValue}</p>
+//     </div>
+//   );
+// }
+
+// export default App;
