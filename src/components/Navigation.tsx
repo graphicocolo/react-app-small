@@ -17,6 +17,7 @@ const Navigation = () => {
                 <li><Link to='/fetchapi2' className="underline">fetch APIを使ったデータ取得2（https://jsonplaceholder.typicode.com/todos/idからデータ取得）<br />map の外側に詳細データ表示</Link></li>
                 <li><Link to='/fetchapi3' className="underline">失敗例：fetch APIを使ったデータ取得3（https://jsonplaceholder.typicode.com/todos?_limit=10からデータ取得）<br />1つのボタンをクリックすると全ての詳細データが表示されてしまう</Link></li>
                 <li><Link to='/fetchapi4' className="underline">fetch APIを使ったデータ取得4（https://jsonplaceholder.typicode.com/todos/idからデータ取得）</Link></li>
+                <li><Link to='/fetchapi5' className="underline">APIエンドポイントから10件のTODOリストを取得し一覧表示、リストのアイテムをクリックすると、そのアイテムの詳細情報を別のコンポーネントで表示</Link></li>
               </ul>
             </li>
           </ul>
