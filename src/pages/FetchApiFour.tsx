@@ -8,7 +8,7 @@ type Todo = {
   completed: boolean;
 }
 
-const FetchApiTwo = () => {
+const FetchApiFour = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   // ↓詳細情報が表示されているかどうかを管理する状態（detailsVisible）を作成
   // タスクの ID をキーとして、それぞれのタスクの詳細表示状態を管理するための状態
@@ -91,4 +91,4 @@ const FetchApiTwo = () => {
   );
 };
 
-export default FetchApiTwo;
+export default FetchApiFour;

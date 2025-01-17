@@ -8,7 +8,7 @@ type Todo = {
   completed: boolean;
 }
 
-const FetchApiTwo = () => {
+const FetchApiThree = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [isDetailVisible, setIsDetailVisible] = useState<boolean>(false);
 
@@ -69,4 +69,4 @@ const FetchApiTwo = () => {
   );
 };
 
-export default FetchApiTwo;
+export default FetchApiThree;
