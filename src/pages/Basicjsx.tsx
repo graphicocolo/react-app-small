@@ -21,6 +21,11 @@ const Basicjsx = () => {
     const value = e.target.value;
     setInputValue(value);
   };
+
+  const [btnBgColor, setBtnBgColor] = useState<boolean>(true);
+  const handleClickBtn = () => {
+    setBtnBgColor(!btnBgColor);
+  }
   return (
     <>
       <Navigation />
@@ -46,11 +51,14 @@ const Basicjsx = () => {
           <p className="text-red-500">{notDoneGreeting}</p>
         )}
       </div>
-      <div className="flex flex-col items-center mt-32">
+      <div className="flex flex-col items-center mt-20">
         <form>
           <input type="text" value={inputValue} onChange={handleInputChange} className="border border-slate-300 rounded" />
         </form>
-        <p>ここに入力欄のテキストが反映される<span className="pl-2 text-blue-600 font-bold">{inputValue}</span></p>
+        <p className="mb-10">ここに入力欄のテキストが反映される<span className="pl-2 text-blue-600 font-bold">{inputValue}</span></p>
+        <form>
+          <button type="button" onClick={handleClickBtn} className={btnBgColor ? "bg-indigo-600 rounded p-2" : "bg-red-600 rounded p-2"}><span className="text-white">背景色を変更</span></button>
+        </form>
       </div>
     </>
   )
@@ -74,6 +82,51 @@ export default Basicjsx;
 //         className="border border-gray-300 p-2 mb-4"
 //       />
 //       <p className="text-lg">{inputValue}</p>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// 答え
+// import { useState } from "react";
+// import "./App.css";
+
+// function App() {
+//   const [isIndigo, setIsIndigo] = useState(true);
+
+//   const toggleColor = () => {
+//     setIsIndigo(!isIndigo);
+//   };
+//   return (
+//     <div
+//       style={{
+//         display: "flex",
+//         flexDirection: "column",
+//         alignItems: "center",
+//         marginTop: "50px",
+//       }}
+//     >
+//       <h1
+//         style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}
+//       >
+//         Event Handling Example
+//       </h1>
+//       <button
+//         onClick={toggleColor}
+//         style={{
+//           backgroundColor: isIndigo ? "indigo" : "red",
+//           color: "white",
+//           padding: "10px 20px",
+//           borderRadius: "5px",
+//           border: "none",
+//           fontSize: "16px",
+//           fontWeight: "bold",
+//           cursor: "pointer",
+//         }}
+//       >
+//         {isIndigo ? "Indigo" : "Red"} Color
+//       </button>
 //     </div>
 //   );
 // }

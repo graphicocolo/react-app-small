@@ -12,7 +12,11 @@ const Navigation = () => {
             <li>
               React 編
               <ul className="list-disc pl-5">
-                <li><Link to='/basicjsx' className="underline">JSX の基本</Link></li>
+                <li><Link to='/basicjsx' className="underline">Reactの基本</Link></li>
+                <li>基礎応用<br /><Link to='/fetchapi1' className="underline">fetch APIを使ったデータ取得1（APIから最大10件のTODOデータを取得・表示）</Link></li>
+                <li><Link to='/fetchapi2' className="underline">fetch APIを使ったデータ取得2（https://jsonplaceholder.typicode.com/todos/idからデータ取得）<br />map の外側に詳細データ表示</Link></li>
+                <li><Link to='/fetchapi3' className="underline">失敗例：fetch APIを使ったデータ取得3（https://jsonplaceholder.typicode.com/todos?_limit=10からデータ取得）<br />1つのボタンをクリックすると全ての詳細データが表示されてしまう</Link></li>
+                <li><Link to='/fetchapi4' className="underline">fetch APIを使ったデータ取得4（https://jsonplaceholder.typicode.com/todos/idからデータ取得）</Link></li>
               </ul>
             </li>
           </ul>

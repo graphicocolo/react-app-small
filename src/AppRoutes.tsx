@@ -8,6 +8,10 @@ import Home from '@/pages/Home';
 import About from '@/pages/About';
 import StudyMnt from "@/pages/StudyMnt";
 import Basicjsx from "@/pages/Basicjsx";
+import FetchApiOne from "@/pages/FetchApiOne";
+import FetchApiTwo from "@/pages/FetchApiTwo";
+import FetchApiThree from "@/pages/FetchApiThree";
+import FetchApiFour from "@/pages/FetchApiFour";
 
 // https://zenn.dev/tonkotsuboy_com/articles/typescript-as-const-satisfies
 const routes = [
@@ -26,6 +30,22 @@ const routes = [
   {
     path: '/basicjsx',
     Component: Basicjsx
+  },
+  {
+    path: '/fetchapi1',
+    Component: FetchApiOne
+  },
+  {
+    path: '/fetchapi2',
+    Component: FetchApiTwo
+  },
+  {
+    path: '/fetchapi3',
+    Component: FetchApiThree
+  },
+  {
+    path: '/fetchapi4',
+    Component: FetchApiFour
   },
 ] as const satisfies RouteProps[];
 
