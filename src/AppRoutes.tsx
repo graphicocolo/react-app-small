@@ -14,6 +14,7 @@ import FetchApiThree from "@/pages/FetchApiThree";
 import FetchApiFour from "@/pages/FetchApiFour";
 import FetchApiFive from "@/pages/FetchApiFive";
 import SampleCustomHooks from "@/pages/SampleCustomHooks";
+import PrivateContent from "@/pages/PrivateContent";
 
 // https://zenn.dev/tonkotsuboy_com/articles/typescript-as-const-satisfies
 const routes = [
@@ -56,6 +57,10 @@ const routes = [
   {
     path: '/customhooks1',
     Component: SampleCustomHooks
+  },
+  {
+    path: '/private',
+    Component: PrivateContent
   },
 ] as const satisfies RouteProps[];
 
