@@ -11,6 +11,7 @@ const SampleCustomHooks = () => {
       <p>カスタムフック例：カウンター</p>
       <Link to='/' className="underline">トップページへ</Link>
       <CounterComponent />
+      <p>カスタムフック例：モーダル</p>
       <div className="max-w-md mx-auto mt-10 text-center">
         <h1 className="text-3xl font-bold mb-4">Modal</h1>
         <div className="space-x-4">

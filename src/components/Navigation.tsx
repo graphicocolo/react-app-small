@@ -22,7 +22,7 @@ const Navigation = () => {
                 <li><Link to='/fetchapi3' className="underline">失敗例：fetch APIを使ったデータ取得3（https://jsonplaceholder.typicode.com/todos?_limit=10からデータ取得）<br />1つのボタンをクリックすると全ての詳細データが表示されてしまう</Link></li>
                 <li><Link to='/fetchapi4' className="underline">fetch APIを使ったデータ取得4（https://jsonplaceholder.typicode.com/todos/idからデータ取得）</Link></li>
                 <li><Link to='/fetchapi5' className="underline">APIエンドポイントから10件のTODOリストを取得し一覧表示、リストのアイテムをクリックすると、そのアイテムの詳細情報を別のコンポーネントで表示</Link></li>
-                <li><Link to='/customhooks1' className="underline">カスタムフック例：カウンター</Link></li>
+                <li><Link to='/customhooks1' className="underline">カスタムフック例：カウンター、モーダル</Link></li>
                 <li><Link to='/private' className="underline">ログインユーザー用ページ</Link>{!isAuthenticated && <span className="pl-5 text-red-700">ログインユーザー専用ページ</span>}</li>
                 <li><Link to='/usememo' className="underline">useMemo例</Link></li>
               </ul>
