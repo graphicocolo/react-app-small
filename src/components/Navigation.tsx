@@ -25,6 +25,7 @@ const Navigation = () => {
                 <li><Link to='/customhooks1' className="underline">カスタムフック例：カウンター、モーダル</Link></li>
                 <li><Link to='/private' className="underline">ログインユーザー用ページ</Link>{!isAuthenticated && <span className="pl-5 text-red-700">ログインユーザー専用ページ</span>}</li>
                 <li><Link to='/usememo' className="underline">useMemo例</Link></li>
+                <li><Link to='/reactmemo' className="underline">コンポーネントのメモ化例</Link></li>
               </ul>
             </li>
           </ul>

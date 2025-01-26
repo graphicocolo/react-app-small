@@ -14,6 +14,7 @@ import FetchApiThree from "@/pages/FetchApiThree";
 import FetchApiFour from "@/pages/FetchApiFour";
 import FetchApiFive from "@/pages/FetchApiFive";
 import SampleCustomHooks from "@/pages/SampleCustomHooks";
+import SampleReactMemo from "@/pages/SampleReactMemo";
 import SampleUseMemo from "@/pages/SampleUseMemo";
 import PrivateContent from "@/pages/PrivateContent";
 
@@ -66,6 +67,10 @@ const routes = [
   {
     path: '/private',
     Component: PrivateContent
+  },
+  {
+    path: '/reactmemo',
+    Component: SampleReactMemo
   },
 ] as const satisfies RouteProps[];
 
