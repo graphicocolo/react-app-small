@@ -13,11 +13,13 @@ import FetchApiTwo from "@/pages/FetchApiTwo";
 import FetchApiThree from "@/pages/FetchApiThree";
 import FetchApiFour from "@/pages/FetchApiFour";
 import FetchApiFive from "@/pages/FetchApiFive";
+import Forms from "@/pages/Forms";
 import SampleCustomHooks from "@/pages/SampleCustomHooks";
 import SampleReactMemo from "@/pages/SampleReactMemo";
 import SampleUseMemo from "@/pages/SampleUseMemo";
 import PrivateContent from "@/pages/PrivateContent";
 
+// https://zenn.dev/takaya39/articles/4669c3fd1c7f04
 // https://zenn.dev/tonkotsuboy_com/articles/typescript-as-const-satisfies
 const routes = [
   {
@@ -55,6 +57,10 @@ const routes = [
   {
     path: '/fetchapi5',
     Component: FetchApiFive
+  },
+  {
+    path: '/forms',
+    Component: Forms
   },
   {
     path: '/customhooks1',
